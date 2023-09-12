@@ -1,0 +1,16 @@
+{
+    "name": "full/recruitment",
+    "description": "super simple recruitment task",
+    "autoload": {
+        "psr-4": {
+            "Full\\Recruitment\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Qunqfat",
+            "email": "qunqfat@github.com"
+        }
+    ],
+    "require": {}
+}

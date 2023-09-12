@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.table-container table {
+  border-collapse: collapse;
+}
+.table-container table thead th {
+  padding-bottom: 20px;
+}
+.table-container table thead th,
+.table-container table thead td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.table-container table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table-container table tbody tr:hover {
+  background-color: #b3eeb5;
+}
+.table-container table tbody tr a {
+  text-decoration: none;
+  color: inherit;
+}
+.table-container table tbody td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.table-container .btn-remove {
+  background-color: #dc3545;
+  color: #f2f2f2;
+  padding: 8px;
+}
+.table-container .btn-remove:hover {
+  background-color: #bd2130;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.form-container form {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 400px;
+}
+.form-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-container form label:before {
+  content: "*";
+  color: #dc3545;
+}
+.form-container form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.form-container form .btn-submit {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container form .btn-submit:hover {
+  background-color: #45a049;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.btn-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-container button:hover {
+  background-color: #45a049;
+}
+
+.custom-dialog {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-content {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.custom-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(200, 200, 200, 0.6);
+  z-index: 999;
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

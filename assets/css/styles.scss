@@ -1,0 +1,184 @@
+$red: #dc3545;
+$light-gray: #f2f2f2;
+$dark-gray: #ddd;
+$green: #4caf50;
+$dark-green: #45a049;
+$light-green: #b3eeb5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  table {
+    border-collapse: collapse;
+
+    thead {
+      th {
+        padding-bottom: 20px;
+      }
+      th,
+      td {
+        border: 1px solid $dark-gray;
+        padding: 8px;
+        text-align: left;
+      }
+    }
+
+    tbody {
+      tr:nth-child(even) {
+        background-color: $light-gray;
+      }
+
+      tr {
+        &:hover {
+          background-color: $light-green;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+      td {
+        border: 1px solid $dark-gray;
+        padding: 8px;
+        text-align: left;
+      }
+    }
+  }
+
+  .btn-remove {
+    background-color: $red;
+    color: #f2f2f2;
+    padding: 8px;
+
+    &:hover {
+      background-color: darken($red, 10%);
+      cursor: pointer;
+    }
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  form {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 400px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      &:before {
+        content: "*";
+        color: $red;
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .btn-submit {
+      background-color: $green;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-green;
+      }
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  button {
+    background-color: $green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+  }
+}
+
+.custom-dialog {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-content {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.custom-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(200, 200, 200, 0.6);
+  z-index: 999;
+}
+
+.d-none {
+  display: none;
+}
