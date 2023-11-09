@@ -4,4 +4,9 @@ The project includes a simple CRUD (Create, Read, Update, Delete) system with da
 
 After fetching the code from the repository, you need to generate the composer autoloader files. To do this, go to the terminal and navigate to the folder containing the composer.json configuration file, then use the following command:
 
+
+```console
 composer dump-autoload
+
+```
+
